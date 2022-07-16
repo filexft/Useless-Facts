@@ -1,0 +1,86 @@
+html{
+    box-sizing: border-box;
+}
+*, *::before, *::after
+{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: sans-serif;
+}
+.cont{
+    background-color: rgba(230, 230, 229, 1);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.rand
+{
+    position: relative;
+    background-color: #f3f3f3;
+    width: 50%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto;
+    border-radius: 20px;
+}
+.desc
+{
+    background-color: transparent;
+    width: 80%;
+    padding: 5px 10px;
+    text-align: center;
+    font-size: large;
+    font-family: cursive;
+    margin: 5px 5px 20px;
+    border-radius: 20px;
+}
+.desc h3
+{
+    display: inline;
+    border-bottom: 2px groove black ; 
+}
+.facts
+{
+    background-color: transparent;
+    width: 80%;
+    height: auto;
+    padding: 5px 10px;
+    text-align: center;
+    border-radius: 20px;
+    font-size: 20px;
+    word-spacing: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 400;
+}
+.not{
+    font-size: 13px;
+    font-family: sans-serif;
+    padding: 5px;
+    margin-top: 10px;
+}
+ 
+@media screen and (max-width: 990px)
+{
+    .rand
+    {
+        width: 70%;
+        height: 70%;
+        
+    }
+}
+@media screen and (max-width: 480px)
+{
+    .rand
+    {
+        width: 100%;
+        height: 100%;
+        
+    }
+}
